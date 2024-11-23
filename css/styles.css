@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixeloid', 'Press Start 2P', cursive;
+    color: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #131324;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1b1f38;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    background-color: #1b1f38;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar ul li.active {
+    background-color: #6a11cb;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-switch-centered {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #1b1f38;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-content {
+    border: 2px solid #ffffff;
+    background-color: #1b1f38;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.project-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #6a11cb;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: rise 5s linear infinite;
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+body.home #vortexGIF {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    animation: moveVortex 10s linear infinite;
+}
+
+@keyframes moveVortex {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% - 100px);
+        transform: scaleX(1);
+    }
+    51% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
+
+#bulbaGIF {
+    position: absolute;
+    bottom: 650px;
+    left: 1500px;
+    width: 250px;
+    height: 136px;
+    z-index: 10;
+}
+
+#tailsDanceGIF {
+    position: absolute;
+    bottom: 650px;
+    left: 400px;
+    width: 250px;
+    height: 136px;
+    z-index: 10;
+}
+
+#jevilGIF {
+    position: absolute;
+    bottom: 350px;
+    left: 1500px;
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+}
+
+#cultGIF {
+    position: absolute;
+    bottom: 350px;
+    left: 400px;
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+}
