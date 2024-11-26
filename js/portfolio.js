@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     
             document.getElementById("spriteGame").addEventListener("click", () => {
-                window.open("https://nokigamerhd.github.io/1-jod-sprite-game/", "_blank");
+                window.open("https://nokigamerhd.github.io/1-jod-sprites/", "_blank");
             });
         }
     });
